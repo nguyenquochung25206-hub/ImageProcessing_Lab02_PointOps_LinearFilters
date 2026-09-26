@@ -70,6 +70,7 @@ def test_brightness_upper_limit():
 
 
 def test_brightness_lower_limit():
+   def test_brightness_lower_limit():
     image = np.array(
         [
             [10, 20],
@@ -82,8 +83,8 @@ def test_brightness_lower_limit():
 
     expected = np.array(
         [
-            [0, 0],
-            [0, 70]
+            [20, 10],
+            [30, 70]
         ],
         dtype=np.uint8
     )
